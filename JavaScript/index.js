@@ -77,7 +77,7 @@ function deleteBooks(index) {
 
 
 function validationBookName(){
-  var regexName = /^[a-zA-Z0-9 ]{3,30}$/;
+  var regexName = /^[\u0621-\u064A\u0660-\u0669a-zA-Z0-9 ]{3,30}$/;
   var name = bookMarkName.value;
   
   if (regexName.test(name)){
